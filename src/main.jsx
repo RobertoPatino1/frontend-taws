@@ -15,11 +15,12 @@ import About from './Pages/About/About';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/frontend-taws",
     element: <App/>,
+    
   },
   {
-    path: "/miembros",
+    path: "/frontend-taws/miembros",
     element: <Members/>,
   },
   // {
@@ -32,9 +33,9 @@ const router = createBrowserRouter([
   },
   {
     path: "/*",
-    element: <Navigate to="/"/>,
+    element: <Navigate to="/frontend-taws"/>,
   },
-]);
+],{basename:"/"});
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
